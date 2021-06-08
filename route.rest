@@ -1,0 +1,23 @@
+GET http://localhost:3000/posts
+
+###
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+	"title": "Some book",
+	"description": "Description of book"
+}
+
+###
+DELETE http://localhost:3000/posts/60b8b7c63b174d64bbd7c938
+
+###
+PUT http://localhost:3000/posts/600b232b943b2a3ee914d157
+Content-Type: application/json
+
+{
+	"title": "Catcher In The Rye",
+	"description": "JD Sallinger"
+}

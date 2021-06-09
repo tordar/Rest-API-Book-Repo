@@ -36,7 +36,10 @@ router.post('/posts', async (req, res) => {
     });
     try {
         const savedPost = await post.save();
-        res.status(201).json(savedPost);
+        //res.status(201).json(savedPost);
+        res.status(204).json(savedPost)
+        location.reload(true)
+        console.log(`${savedPost.title} added to database`)
     } catch (error) {
         res.status(400).json({ message: error.message });
     }

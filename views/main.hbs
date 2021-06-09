@@ -1,12 +1,15 @@
-{{> lovedChamps}}
-{{> hatedChamps}}
-{{!-- depending on the value of the listExists variable --}}
-{{!-- if it’s true then the list will be rendered --}}
-{{!-- if the value is equal to false the list will not be rendered --}}
-{{#if listExists}} 
-  <ul>
-    {{#each suggestedChamps}}
-      <li class={{this.lane}}>{{this.name}}</li>
-    {{/each}}
-  </ul>
-{{/if}}
+<h1>Book repository</h1>
+
+<h4>Create new book</h4>
+<form action="/posts" method="POST">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input class="form-control" name="title">
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <input class="form-control" name="description">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+<div id="books"></div>

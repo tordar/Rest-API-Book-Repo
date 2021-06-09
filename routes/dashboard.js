@@ -1,8 +1,10 @@
 const express = require('express');
+const path = require('path');
 const router = express.Router();
+const { ensureAuth, ensureGuest } = require('../middleware/auth')
 
 router.get('/', (req, res) => {
-	res.render('main', {layout: 'index', listExists: true});
+	res.sendFile(path.join(__dirname+'/index.html'));
 	});
 	
 module.exports = router;

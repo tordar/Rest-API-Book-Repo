@@ -29,9 +29,7 @@ async (accessToken, refreshToken, profile, done) => {
 	} catch (err) {
 		console.error(err)
 	}
-}
-)
-);
+}));
 
 passport.serializeUser((user, done) => {
     done(null, user.id)

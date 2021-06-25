@@ -6,22 +6,55 @@
     <title>Book repository</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
         </head>
 				<body>
-					<h1>Book repository</h1>
-					<h4>Create new book</h4>
-					<form action="/posts" method="POST">
-									<div class="form-group">
-											<label for="title">Title</label>
-											<input class="form-control" name="title">
-									</div>
-									<div class="form-group">
-											<label for="description">Description</label>
-											<input class="form-control" name="description">
-									</div>
-									<button type="submit" class="btn btn-primary">Submit</button>
-							</form>
-					<div id="books"></div>
+					<h1 id="header">Book repository</h1>
+					<aside>
+						
+						<div class="aside">
+							<h4>Add new book</h4>
+							<form action="/posts" method="POST">
+											<div class="form-group">
+													<label for="title"></label>
+													<input placeholder="Title" class="form-control" name="title">
+											</div>
+											<div class="form-group">
+													<label for="description"></label>
+													<input placeholder="Description" class="form-control" name="description">
+											</div>
+											<button type="submit" class="myButton">Submit</button>
+									</form>
+								</div>
+								<div class="aside">
+									<div class="description">
+										<h3>
+											This is Tordar's book repository
+										</h3>
+										<button class="myButton">Info</button>
+										<button onclick=showCard() class="myButton">How to use</button>
+										</div>
+								</div>
+								<div class="aside">
+									<div id="howTo">
+										<h2>
+											How to use:
+										</h2>
+										<p>
+											This is a database to add books, or anything else for that matter.
+											It is connected to a MongoDB database. If you authorise your google
+											account you can add your own information, and whenever you login to this
+											website you will instantly have access to the information you added.
+										</p>
+										</div>
+								</div>
+						</aside>
+						
+					<section>
+						<div id="books"></div>
+					</section>
 				</body>
     <script src="index.js"></script>
 </html>

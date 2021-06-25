@@ -1,8 +1,6 @@
 const express = require('express');
 const app = express();
 const DBConnection = require('./config/db')
-const handlebars = require('express-handlebars');
-app.set('view engine', 'hbs');   
 app.use(express.static('public'));
 const cors = require('cors');
 const dotenv = require('dotenv')

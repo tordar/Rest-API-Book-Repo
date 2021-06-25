@@ -1,9 +1,199 @@
+body {
+  background: #ecddd6;
+  font-family: 'Nunito', sans-serif;
+}
 
-li {
-	font-size: 2rem;
-	width: 300px;
-	margin: 4px;
-	padding: 4px;
-	list-style: none
-	}
-body {background-color: #eceacf}
+button {
+  margin: 5px;
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  background-color: #b8cfdd;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  width: 60%;
+}
+
+input:hover {
+  -webkit-box-shadow: 0 0 15px 4px rgba(104, 99, 99, 0.151);
+          box-shadow: 0 0 15px 4px rgba(104, 99, 99, 0.151);
+}
+
+section {
+  float: left;
+  margin: 0 1.5%;
+  width: 70%;
+  padding: 2px 2px;
+}
+
+.aside {
+  display: flexbox;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+aside {
+  float: right;
+  margin: 0 1.5%;
+  width: 22%;
+}
+
+.description {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  width: 300px;
+  margin: 4px;
+  padding: 4px;
+  background-color: #dee7ec;
+  margin-top: 20px;
+}
+
+#howTo {
+  display: none;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 300px;
+  margin: 4px;
+  padding: 4px;
+  background-color: #dee7ec;
+  margin-top: 20px;
+}
+
+#books {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  width: 300px;
+  margin: 4px;
+  padding: 4px;
+  background-color: #dee7ec;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 300px;
+  border-radius: 5px 5px 0 0;
+}
+
+.delete-button {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #dd6565), to(#cc4331));
+  background: linear-gradient(to bottom, #dd6565 5%, #cc4331 100%);
+  background-color: #eba1a1;
+  border-radius: 5px;
+  border: 1px solid #dd8c74;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Trebuchet MS;
+  font-size: 15px;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.delete-button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #c7e4e4), to(#acd6cb));
+  background: linear-gradient(to bottom, #c7e4e4 5%, #acd6cb 100%);
+  background-color: #d38871;
+}
+
+.delete-button:active {
+  position: relative;
+  top: 1px;
+}
+
+.edit-button {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #dbe580), to(#e8f078));
+  background: linear-gradient(to bottom, #dbe580 5%, #e8f078 100%);
+  border-radius: 5px;
+  border: 1px solid #cec48d;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Trebuchet MS;
+  font-size: 15px;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.edit-button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #c7e4e4), to(#acd6cb));
+  background: linear-gradient(to bottom, #c7e4e4 5%, #acd6cb 100%);
+  background-color: #d38871;
+}
+
+.edit-button:active {
+  position: relative;
+  top: 1px;
+}
+
+.myButton {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #76a389), to(#7db388));
+  background: linear-gradient(to bottom, #76a389 5%, #7db388 100%);
+  background-color: #76a389;
+  border-radius: 5px;
+  border: 1px solid #7cc2ac;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Trebuchet MS;
+  font-size: 15px;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.myButton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #7db388), to(#76a389));
+  background: linear-gradient(to bottom, #7db388 5%, #76a389 100%);
+  background-color: #7db388;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+@media only screen and (max-width: 600px) {
+  aside {
+    float: none;
+    margin: 0 1.5%;
+    width: 100%;
+  }
+  section {
+    float: none;
+    margin: 0 1.5%;
+    width: 100%;
+    padding: 2px 2px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
